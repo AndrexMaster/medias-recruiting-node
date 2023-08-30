@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "admin",
+    "password": "root",
+    "database": "testdb",
+    "host": "192.168.0.112",
+    "dialect": "mariadb"
+  },
+  "test": {
+    "username": "admin",
+    "password": "root",
+    "database": "testdb",
+    "host": "192.168.0.112",
+    "dialect": "mariadb"
+  },
+  "production": {
+    "username": "admin",
+    "password": "root",
+    "database": "testdb",
+    "host": "192.168.0.112",
+    "dialect": "mariadb"
+  }
+}
