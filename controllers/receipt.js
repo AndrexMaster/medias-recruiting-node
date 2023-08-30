@@ -1,4 +1,3 @@
-import {Product} from "../models/product.js";
 import {Receipt} from "../models/receipt.js";
 
 export const getReceipts = async (req, res) => {
