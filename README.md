@@ -4,12 +4,12 @@ This file contains a number of commands that need to be run to successfully inst
 
 Change data in /config/config.json - development
 
-"development": {
-    "username": "username",
-    "password": "password",
-    "database": "database",
-    "host": "host",
-    "dialect": "mariadb"
+"development": { \
+    "username": "username", \
+    "password": "password", \
+    "database": "database", \
+    "host": "host", \
+    "dialect": "mariadb" \
   },
 
 # Step by step
