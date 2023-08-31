@@ -5,7 +5,7 @@ export const getProducts = async (req, res) => {
         const products = await Product.findAll()
         res.json(products)
     } catch (err) {
-        res.json({
+        res.status(400).json({
             message: 'Something went wrong(',
             error: err
         })
@@ -23,7 +23,7 @@ export const addProduct = async (req, res) => {
         })
 
     } catch (err) {
-        res.json({
+        res.status(400).json({
             message: 'Something went wrong(',
             error: err
         })

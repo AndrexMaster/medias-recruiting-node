@@ -1,7 +1,8 @@
 import Sequelize from 'sequelize'
 import { sequelize } from '../db/sequelizeDefine.js';
+import {Product} from "./product.js";
 
-export const ProductInReceipt = sequelize.define("productInReceipt", {
+const ProductInReceipt = sequelize.define("productInReceipt", {
     id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
@@ -24,3 +25,9 @@ export const ProductInReceipt = sequelize.define("productInReceipt", {
     tableName: 'productsInReceipts',
     timestamps: false
 });
+
+ProductInReceipt.belongsTo(Product, {
+    foreignKey: 'product_id'
+});
+
+export { ProductInReceipt }
