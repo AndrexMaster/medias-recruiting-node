@@ -17,7 +17,7 @@ module.exports = {
         defaultValue: new Date().toISOString().slice(0, 19).replace('T', ' ')
       },
       total: {
-        type: Sequelize.DOUBLE(7, 2),
+        type: Sequelize.DOUBLE(14, 2),
         defaultValue: null
       }
     })
